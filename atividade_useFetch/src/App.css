@@ -1,0 +1,147 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.app-container {
+  width: min(900px, 92%);
+  margin: 40px auto;
+}
+
+.app-header {
+  margin-bottom: 30px;
+}
+
+.app-header h1 {
+  color: #1d4ed8;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.app-header p {
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.department-section {
+  background: #fff;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 6%);
+}
+
+.department-section h2 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.department-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.form-group input:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #2563eb;
+}
+
+.department-form button {
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.department-form button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.department-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.department-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.department-card {
+  padding: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+}
+
+.department-card h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.department-card p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.loading-message,
+.empty-message {
+  color: #64748b;
+  padding: 10px 0;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    margin: 24px auto;
+  }
+
+  .department-section {
+    padding: 18px;
+  }
+
+  .department-list {
+    grid-template-columns: 1fr;
+  }
+
+  .app-header h1 {
+    font-size: 25px;
+  }
+}

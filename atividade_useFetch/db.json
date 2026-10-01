@@ -1,0 +1,14 @@
+{
+  "departments": [
+    {
+      "id": "1",
+      "name": "Recursos Humanos",
+      "acronym": "RH"
+    },
+    {
+      "id": "2",
+      "name": "Tecnologia da Informação",
+      "acronym": "TI"
+    }
+  ]
+}
